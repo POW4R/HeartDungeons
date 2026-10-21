@@ -1,0 +1,35 @@
+# HeartDungeons configuration
+
+hearts:
+  # Hearts every new player starts with (vanilla is 10).
+  start: 10
+  # Nobody can go above this many hearts (from levels or Heart items).
+  max: 20
+  # Withdrawing or dying in a dungeon never takes a player below this.
+  min: 3
+  # Gain +1 heart every this many levels.
+  per-levels: 5
+  # Lose this many hearts when dying inside a dungeon.
+  lost-on-dungeon-death: 1
+
+levels:
+  max-level: 100
+  # XP needed for the next level = base + per-level * current level.
+  xp-base: 60
+  xp-per-level: 30
+  # Show "[Lv 12]" in front of names in the tab list.
+  show-in-tab: true
+
+dungeons:
+  # Number of combat rooms before the boss room.
+  rooms: 5
+  # Minutes before an unfinished run fails and everyone is sent back.
+  time-limit-minutes: 40
+  # Seconds players stay after the boss dies before being sent back.
+  exit-delay-seconds: 90
+  # Level needed for each tier (tier 1 is always open).
+  tier-levels:
+    2: 10
+    3: 20
+    4: 30
+    5: 45

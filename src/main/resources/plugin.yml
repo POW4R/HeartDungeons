@@ -1,0 +1,24 @@
+name: HeartDungeons
+version: '${version}'
+main: dev.hd.HeartDungeons
+api-version: '26.2'
+description: Mob-kill levels that grant hearts, tradeable hearts, generated dungeon runs with elites and bosses, and OP weapons.
+authors: [HeartDungeons]
+load: POSTWORLD
+
+commands:
+  dungeon:
+    description: Start and manage dungeon runs
+    usage: /dungeon <start|leave|party|tiers|admin>
+    aliases: [dg]
+  stats:
+    description: Show level, XP and hearts
+    usage: /stats [player]
+  withdraw:
+    description: Turn your hearts into Heart items
+    usage: /withdraw [amount]
+
+permissions:
+  heartdungeons.admin:
+    description: Admin commands (give weapons/hearts, set levels, end runs)
+    default: op
